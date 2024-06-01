@@ -11,8 +11,8 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="h-16 w-full bg-base-100 px-4 lg:px-6">
-                <div className="container mx-auto grid h-full max-w-7xl grid-cols-2 items-center justify-items-stretch md:grid-cols-3">
+            <header className="h-16 w-full bg-base-100 px-4 lg:px-6">
+                <nav className="container mx-auto grid h-full max-w-7xl grid-cols-2 items-center justify-items-stretch md:grid-cols-3">
                     <Link
                         href="/"
                         className="btn btn-ghost justify-self-start px-0 text-xl hover:bg-transparent hover:text-primary"
@@ -89,8 +89,8 @@ export default function Navbar() {
                             </div>
                         </div>
                     )}
-                </div>
-            </nav>
+                </nav>
+            </header>
         </>
     );
 }
