@@ -1,11 +1,12 @@
-"use client";
+'use client'
 import { MenuIcon, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-    const handler = () => {
+
+    const toggleMenu = () => {
         setOpen(!open);
     };
 
@@ -39,21 +40,20 @@ export default function Navbar() {
                             </button>
                         </div>
                     </div>
-                    {open ? (
-                        <div className="-mr-4 justify-self-end md:hidden lg:hidden">
-                            <button
-                                onClick={handler}
-                                role="button"
-                                className="btn btn-circle btn-ghost"
-                            >
-                                <MenuIcon size={24} />
-                            </button>
-                        </div>
-                    ) : (
+                    <div className="-mr-4 justify-self-end md:hidden lg:hidden">
+                        <button
+                            onClick={toggleMenu}
+                            role="button"
+                            className="btn btn-circle btn-ghost"
+                        >
+                            {open ? <X size={24} /> : <MenuIcon size={24} />}
+                        </button>
+                    </div>
+                    {open && (
                         <div className="absolute right-0 top-0 z-10 min-h-screen w-full bg-white pt-[10px] shadow-lg sm:w-2/3">
                             <div className="grid">
                                 <button
-                                    onClick={handler}
+                                    onClick={toggleMenu}
                                     role="button"
                                     className="btn btn-circle btn-ghost justify-self-end"
                                 >
