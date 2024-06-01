@@ -12,5 +12,4 @@ export const authConfig: NextAuthOptions = {
         }),
     ],
     adapter: PrismaAdapter(prisma) as Adapter,
-    secret: process.env.NEXTAUTH_URL
 };
