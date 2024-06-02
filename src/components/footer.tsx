@@ -10,24 +10,24 @@ export default function Footer() {
             <footer className="min-h-24 w-full bg-base-content px-4 lg:px-6">
                 <div className="mx-auto w-full max-w-7xl">
                     <div>
-                        <div className="grid md:grid-cols-3 text-white">
+                        <div className="grid text-white md:grid-cols-3">
                             <div>
                                 <Link
                                     href="/"
-                                    className="btn btn-ghost justify-self-start px-0 text-lg text-center w-full md:text-left md:w-fit text-primary hover:bg-transparent hover:text-primary"
+                                    className="btn btn-ghost w-full justify-self-start px-0 text-center text-lg text-primary hover:bg-transparent hover:text-primary md:w-fit md:text-left"
                                 >
                                     SmoothCV
                                 </Link>
-                                <p className="text-sm text-center md:text-left w-full md:w-2/3">
-                                    "SmoothCV: Craft standout resumes
+                                <p className="w-full text-center text-sm md:w-2/3 md:text-left">
+                                    &quot;SmoothCV: Craft standout resumes
                                     effortlessly. Professional templates, AI
-                                    suggestions, intuitive tools."
+                                    suggestions, intuitive tools.&quot;
                                 </p>
-                                <p className="text-sm text-white/50 py-4 text-center md:text-left">
+                                <p className="py-4 text-center text-sm text-white/50 md:text-left">
                                     Copyright © 2024 - All rights reserved
                                 </p>
                             </div>
-                            <div className="pt-4 w-full text-center md:text-left">
+                            <div className="w-full pt-4 text-center md:text-left">
                                 <h4 className="font-xl font-bold text-white/50">
                                     LINKS
                                 </h4>
@@ -41,16 +41,13 @@ export default function Footer() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="#faq"
-                                            className="text-sm"
-                                        >
+                                        <Link href="#faq" className="text-sm">
                                             FAQ
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="pt-4 w-full text-center md:text-left">
+                            <div className="w-full pt-4 text-center md:text-left">
                                 <h4 className="font-xl font-bold text-white/50">
                                     LEGAL
                                 </h4>
@@ -70,9 +67,9 @@ export default function Footer() {
                         </div>
                         <div className="flex items-center gap-3 py-4">
                             <Avatar images={image} />
-                            <p className="text-sm text-white text-center md:text-left">
-                                Hi👋 I'm Damdy, the creator of SmoothCV. You can
-                                follow my work on{" "}
+                            <p className="text-center text-sm text-white md:text-left">
+                                Hi👋 I&apos;m Damdy, the creator of SmoothCV.
+                                You can follow my work on{" "}
                                 <Link
                                     href={"https://github.com/DamdyJ"}
                                     className="font-bold underline underline-offset-2"

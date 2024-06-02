@@ -41,11 +41,11 @@ export default function Pricing() {
                     >
                         Pricing
                     </h2>
-                    <div className="lg:mx-20 flex flex-col md:flex-row md:justify-between gap-4">
+                    <div className="flex flex-col gap-4 md:flex-row md:justify-between lg:mx-20">
                         {pricingTiers.map((tier, index) => (
                             <div
                                 key={index}
-                                className={`grid sm:text-center md:w-fit gap-4 rounded-lg border bg-white p-8 shadow-sm ${
+                                className={`grid gap-4 rounded-lg border bg-white p-8 shadow-sm sm:text-center md:w-fit ${
                                     index === 1 ? "border-2 border-primary" : ""
                                 }`}
                             >
@@ -60,7 +60,7 @@ export default function Pricing() {
                                     {tier.features.map((feature, index) => (
                                         <li
                                             key={index}
-                                            className="flex items-center gap-3 justify-center sm:justify-start"
+                                            className="flex items-center justify-center gap-3 sm:justify-start"
                                         >
                                             <Check size={16} />
                                             <p>{feature}</p>
@@ -71,7 +71,8 @@ export default function Pricing() {
                                     Get SmoothCV
                                 </button>
                                 <p className="text-sm text-base-content/50">
-                                    One-time payment, then it's yours forever
+                                    One-time payment, then it&apos;s yours
+                                    forever
                                 </p>
                             </div>
                         ))}
