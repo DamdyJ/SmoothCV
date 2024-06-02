@@ -23,10 +23,20 @@ export default function Navbar() {
                     <div className="hidden justify-self-center md:block">
                         <ul className="flex gap-6">
                             <li>
-                                <Link href="/pricing" className="btn btn-ghost hover:bg-transparent hover:text-white hover:font-semibold">Pricing</Link>
+                                <Link
+                                    href="#pricing"
+                                    className="btn btn-ghost hover:bg-transparent hover:font-semibold hover:text-white"
+                                >
+                                    Pricing
+                                </Link>
                             </li>
                             <li>
-                                <Link href="/pricing" className="btn btn-ghost hover:bg-transparent hover:text-white hover:font-semibold">FAQ</Link>
+                                <Link
+                                    href="#faq"
+                                    className="btn btn-ghost hover:bg-transparent hover:font-semibold hover:text-white"
+                                >
+                                    FAQ
+                                </Link>
                             </li>
                         </ul>
                     </div>
