@@ -34,7 +34,7 @@ export default function Footer() {
                                 <ul>
                                     <li>
                                         <Link
-                                            href={"/#pricing"}
+                                            href="#pricing"
                                             className="text-sm"
                                         >
                                             Pricing
@@ -42,7 +42,7 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <Link
-                                            href={"/#faq"}
+                                            href="#faq"
                                             className="text-sm"
                                         >
                                             FAQ
@@ -56,12 +56,12 @@ export default function Footer() {
                                 </h4>
                                 <ul>
                                     <li>
-                                        <Link href={"/"} className="text-sm">
+                                        <Link href="/" className="text-sm">
                                             Terms of services
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={"/"} className="text-sm">
+                                        <Link href="/" className="text-sm">
                                             Privacy policy
                                         </Link>
                                     </li>
