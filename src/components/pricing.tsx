@@ -47,7 +47,7 @@ export default function Pricing() {
                                 key={index}
                                 className={`grid gap-4 rounded-lg border bg-white p-8 shadow-sm sm:text-center md:w-fit ${
                                     index === 1 ? "border-2 border-primary" : ""
-                                }`}
+                                } hover:outline hover:outline-primary`}
                             >
                                 <h4 className="text-xl font-medium">
                                     {tier.name}
